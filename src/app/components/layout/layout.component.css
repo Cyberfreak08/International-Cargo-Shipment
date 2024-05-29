@@ -1,0 +1,106 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #1976d2; /* Material primary color */
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.nav-button {
+  color: white;
+  margin: 0 10px;
+}
+
+.nav-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.profile-icon {
+  color: white;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 10px;
+  color: white;
+}
+
+.user-profile .email {
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
+.user-profile .name {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.logoff-button {
+  color: white;
+  border: 1px solid white;
+}
+
+.logoff-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.example-menu {
+  display: inline-flex;
+  flex-direction: column;
+  min-width: 180px;
+  max-width: 280px;
+  background-color: rgba(255, 255, 255);
+  padding: 6px 0;
+}
+
+.example-menu-item,
+.example-standalone-trigger {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+
+  user-select: none;
+  min-width: 64px;
+  line-height: 36px;
+  padding: 0 16px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex: 1;
+}
+
+.example-menu-item:hover {
+  background-color: rgb(208, 208, 208);
+}
+
+.example-menu-item:active {
+  background-color: rgb(170, 170, 170);
+}
+
+.example-standalone-item {
+  background-color: rgb(239, 239, 239);
+}
+.example-standalone-item:hover {
+  background-color: rgb(208, 208, 208);
+}
+.example-standalone-item[aria-expanded="true"] {
+  background-color: rgb(208, 208, 208);
+}
