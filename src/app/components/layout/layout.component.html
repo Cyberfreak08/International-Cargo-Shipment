@@ -1,0 +1,61 @@
+<mat-toolbar color="primary" class="navbar">
+  <!-- <div class="title-context"> -->
+    <span class="title">International Cargo Shipment</span>
+  <button [cdkMenuTriggerFor]="menu" class="example-standalone-trigger">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <ng-template #menu>
+    <div class="example-menu" cdkMenu>
+      <button class="example-menu-item" cdkMenuItem routerLink="">Max Revenue in 2nd Quarter</button>
+      <button class="example-menu-item" cdkMenuItem routerLink="">
+        Quarter Revenue
+      </button>
+      <button class="example-menu-item" cdkMenuItem routerLink="">
+        Customer Volume
+      </button>
+      <button class="example-menu-item" cdkMenuItem routerLink="">
+        Max revenuer
+      </button>
+    </div>
+  </ng-template>
+  <!-- </div> -->
+
+  <div class="user-info">
+    <mat-icon class="profile-icon">account_circle</mat-icon>
+    <span class="user-profile">
+      <span class="name">{{ userProfile?.name }}</span>
+    </span>
+
+    <button [cdkMenuTriggerFor]="menu" class="example-standalone-trigger">
+      <mat-icon>arrow_drop_down</mat-icon>
+    </button>
+    <ng-template #menu>
+      <div class="example-menu" cdkMenu>
+        <button
+          class="example-menu-item"
+          cdkMenuItem
+          (click)="scrollToSection('home')"
+        >
+          Home
+        </button>
+        <button
+          class="example-menu-item"
+          cdkMenuItem
+          (click)="scrollToSection('about')"
+        >
+          About Us
+        </button>
+        <button
+          class="example-menu-item"
+          cdkMenuItem
+          (click)="scrollToSection('contact')"
+        >
+          Contact Us
+        </button>
+        <button class="example-menu-item" cdkMenuItem (click)="onLogoff()">
+          Log Off
+        </button>
+      </div>
+    </ng-template>
+  </div>
+</mat-toolbar>

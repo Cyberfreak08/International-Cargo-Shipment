@@ -1,0 +1,50 @@
+//Category
+
+| id | category_name   |
+|----|-----------------|
+| 1  | Electronics     |
+| 2  | Clothing        |
+| 3  | Books           |
+| 4  | Home Appliances |
+
+
+//customer details
+
+| id                                 | name          | type          | password  | category_id |
+|------------------------------------|---------------|---------------|-----------|-------------|
+| 44f1b1cb-6b53-4ab7-ba32-1a31e7b18ff4| John Doe      | international | password1 | 1           |
+| c47374cd-3037-43ad-bbf6-af05f880cf7a| Jane Smith    | national      | password2 | 2           |
+| 73c0e193-7d85-4c59-b02e-144f205b3a5c| Alice Lee     | international | password3 | 3           |
+| 8f45849a-48e8-49ed-b8cd-9915898e74b9| Bob Brown     | national      | password4 | 4           |
+| e752d3c5-c5b2-4694-9cf4-18b0c96f34ab| Emma Davis    | international | password5 | 1           |
+| 95096e4d-20d2-4d48-bd13-431d0048e85b| Liam Wilson   | national      | password6 | 2           |
+| 158b6f32-80c7-4f78-9057-c07c1a0d9b18| Olivia Garcia | international | password7 | 3           |
+| 788be44c-934d-46a8-9eae-b0a2a89be4f7| James Martinez| national      | password8 | 4           |
+| 0b1324f8-c876-45b2-8677-39220d7c02b8| Sophia Rodriguez | international | password9 | 1       |
+| 73c0e193-7d85-4c59-b02e-144f205b3a5c| William Taylor| national      | password10| 2           |
+
+
+
+//Office details
+
+| id | country   |
+|----|-----------|
+| 1  | Singapore|
+
+
+
+//Transaction details
+
+
+| id                                 | customer_id                              | office_id | date_of_transaction | category_id | amount | destination |
+|------------------------------------|------------------------------------------|-----------|---------------------|-------------|--------|-------------|
+| ddf6a0c5-3a2a-48d1-8a7b-f0e3a2e1d4fe| 44f1b1cb-6b53-4ab7-ba32-1a31e7b18ff4    | 1         | 2024-05-01          | 1           | 500    | Singapore   |
+| 8d1958ae-214e-41d2-8022-d7ababb2c7e3| c47374cd-3037-43ad-bbf6-af05f880cf7a    | 1         | 2024-05-02          | 2           | 300    | Singapore   |
+| 1a8a71c2-0b84-4874-b820-69c02674d3cc| 73c0e193-7d85-4c59-b02e-144f205b3a5c    | 1         | 2024-05-03          | 3           | 200    | Singapore   |
+| 5ef1fdd3-3aeb-484b-81eb-f1d6c63251d1| 8f45849a-48e8-49ed-b8cd-9915898e74b9    | 1         | 2024-05-04          | 4           | 400    | Singapore   |
+| 2316e595-4b36-4b73-9932-6d73217067e5| e752d3c5-c5b2-4694-9cf4-18b0c96f34ab    | 1         | 2024-05-05          | 1           | 600    | Singapore   |
+| 04c85e48-c171-4ed9-81b7-c9dd28c39950| 95096e4d-20d2-4d48-bd13-431d0048e85b    | 1         | 2024-05-06          | 2           | 350    | Singapore   |
+| e3922d8e-88a5-49ff-90eb-f3e5e755f700| 158b6f32-80c7-4f78-9057-c07c1a0d9b18    | 1         | 2024-05-07          | 3           | 250    | Singapore   |
+| 04205a91-7ef5-426e-9a7b-bdfbd47dd372| 788be44c-934d-46a8-9eae-b0a2a89be4f7    | 1         | 2024-05-08          | 4           | 450    | Singapore   |
+| 7b6f3f9b-cdf1-4a44-bd21-935df7a11e1e| 0b1324f8-c876-45b2-8677-39220d7c02b8    | 1         | 2024-05-09          | 1           | 700    | Singapore   |
+| 605c0c18-10b8-4ec8-8921-c7364e32a13c| 73c0e193-7d85-4c59-b02e-144f205b3a5c    | 1         | 2024-05-10          | 2           | 400    | Singapore   |

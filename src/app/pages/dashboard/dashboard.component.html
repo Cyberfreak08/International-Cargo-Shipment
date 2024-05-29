@@ -1,2 +1,49 @@
-<p>dashboard works!</p>
-<app-layout></app-layout>
+<header><app-layout></app-layout></header>
+<app-home #homeSection></app-home>
+<app-about-us #aboutSection></app-about-us>
+<!-- <h1>Customers by Category</h1> -->
+<!-- <pre>{{ customersByCategory | json }}</pre> -->
+
+<div class="dashboard">
+    <app-customers-by-category [data]="customersByCategory"></app-customers-by-category>
+    
+    <!-- <app-quarterly-transactions [data]="quarterlyTransactions"></app-quarterly-transactions>
+    <app-national-vs-international [data]="nationalVsInternational"></app-national-vs-international>
+    <app-monthly-transactions [data]="monthlyTransactions"></app-monthly-transactions>
+   -->
+  
+  
+   <!-- <ngx-charts-bar-vertical
+    [scheme]="colorScheme"
+    [results]="customersByCategory"
+    [gradient]="gradient"
+    [xAxis]="showXAxis"
+    [yAxis]="showYAxis"
+    [legend]="showLegend"
+    [showXAxisLabel]="showXAxisLabel"
+    [showYAxisLabel]="showYAxisLabel"
+    [xAxisLabel]="xAxisLabel"
+    [yAxisLabel]="yAxisLabel"
+  >
+  </ngx-charts-bar-vertical> -->
+</div>
+<!-- 
+<h1>Quarterly Transactions</h1>
+<pre>{{ quarterlyTransactions | json }}</pre>
+
+<h1>National vs International</h1>
+<pre>{{ nationalVsInternational | json }}</pre>
+
+<h1>Maximum Monthly Transactions</h1>
+<div *ngFor="let category of monthlyTransactions">
+  <h2>Category: {{ category.categoryId }}</h2>
+  <div *ngFor="let customer of category.customers">
+    <h3>Customer Name: {{ customer.name }}</h3>
+    <p>Company Name: {{ customer.company_name }}</p>
+    <p>Total Transactions: {{ customer.totalTransactions }}</p>
+    <p>Total Revenue: {{ customer.totalRevenue | currency }}</p>
+  </div>
+</div> -->
+<footer>
+  <app-contact-form #contactSection></app-contact-form>
+</footer>

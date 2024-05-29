@@ -1,0 +1,96 @@
+| id                                 | customer_id                              | office_id | date_of_transaction | category_id | amount | destination |
+|------------------------------------|------------------------------------------|-----------|---------------------|-------------|--------|-------------|
+| 0454b047-4d06-4f4f-9bc8-af2ffebf445d| 44f1b1cb-6b53-4ab7-ba32-1a31e7b18ff4    | 1         | 2024-05-01          | 1           | 500    | Singapore   |
+| 473f80da-4c52-4eb0-b8f1-97b6696d58ea| 44f1b1cb-6b53-4ab7-ba32-1a31e7b18ff4    | 1         | 2024-05-02          | 2           | 300    | Singapore   |
+| c7325cd7-68ab-4f7a-b127-2c6155f3a2a0| 44f1b1cb-6b53-4ab7-ba32-1a31e7b18ff4    | 1         | 2024-05-03          | 3           | 200    | Singapore   |
+| 2ebfc8aa-f292-4ba5-b373-746ce8f9ee0c| 44f1b1cb-6b53-4ab7-ba32-1a31e7b18ff4    | 1         | 2024-05-04          | 4           | 400    | Singapore   |
+| 00dbcd65-8688-4974-8f94-0fc9460f86de| 44f1b1cb-6b53-4ab7-ba32-1a31e7b18ff4    | 1         | 2024-05-05          | 1           | 600    | Singapore   |
+| f8ebdce6-c8ee-43ee-9303-53903bcf11a0| 44f1b1cb-6b53-4ab7-ba32-1a31e7b18ff4    | 1         | 2024-05-06          | 2           | 350    | Singapore   |
+| b3a8a391-34a1-4a09-a399-10865f4b5c89| 44f1b1cb-6b53-4ab7-ba32-1a31e7b18ff4    | 1         | 2024-05-07          | 3           | 250    | Singapore   |
+| 33236816-8bb9-47af-b731-4e59707e6e09| 44f1b1cb-6b53-4ab7-ba32-1a31e7b18ff4    | 1         | 2024-05-08          | 4           | 450    | Singapore   |
+| e9f4f37e-2906-4d71-9f9b-c1d833de56c4| 44f1b1cb-6b53-4ab7-ba32-1a31e7b18ff4    | 1         | 2024-05-09          | 1           | 700    | Singapore   |
+| 4629f49a-7b3d-4e16-8b2c-72a5f34437eb| 44f1b1cb-6b53-4ab7-ba32-1a31e7b18ff4    | 1         | 2024-05-10          | 2           | 400    | Singapore   |
+| aec1ff51-33e1-4874-af15-7a93b32cc08e| c47374cd-3037-43ad-bbf6-af05f880cf7a    | 1         | 2024-05-01          | 1           | 500    | Singapore   |
+| 6881d1b7-1c45-4df1-9321-18fa63417cb9| c47374cd-3037-43ad-bbf6-af05f880cf7a    | 1         | 2024-05-02          | 2           | 300    | Singapore   |
+| 9fa39b7e-88de-4c24-818e-ae51c1c71942| c47374cd-3037-43ad-bbf6-af05f880cf7a    | 1         | 2024-05-03          | 3           | 200    | Singapore   |
+| 884b06e0-6b4a-4679-9010-94ad7f305b10| c47374cd-3037-43ad-bbf6-af05f880cf7a    | 1         | 2024-05-04          | 4           | 400    | Singapore   |
+| 1ab63d79-12b5-4a49-b535-df6cbda3e6a1| c47374cd-3037-43ad-bbf6-af05f880cf7a    | 1         | 2024-05-05          | 1           | 600    | Singapore   |
+| 62ff1b52-8f3b-420b-88ab-7d088cd23b41| c47374cd-3037-43ad-bbf6-af05f880cf7a    | 1         | 2024-05-06          | 2           | 350    | Singapore   |
+| c9c4b228-1556-44d5-bd0f-051c87d14a62| c47374cd-3037-43ad-bbf6-af05f880cf7a    | 1         | 2024-05-07          | 3           | 250    | Singapore   |
+| 0b08b0f2-8409-4df4-84a4-468214bbcbf5| c47374cd-3037-43ad-bbf6-af05f880cf7a    | 1         | 2024-05-08          | 4           | 450    | Singapore   |
+| 1656df79-292d-4ef3-b03e-2b77a44792cb| c47374cd-3037-43ad-bbf6-af05f880cf7a    | 1         | 2024-05-09          | 1           | 700    | Singapore   |
+| 0d2d93d7-134e-44b2-9f80-2b3f51810d32| c47374cd-3037-43ad-bbf6-af05f880cf7a    | 1         | 2024-05-10          | 2           | 400    | Singapore   |
+| bfcf0e9d-ba7e-43fc-874f-6e5f3c75cf70| 73c0e193-7d85-4c59-b02e-144f205b3a5c    | 1         | 2024-05-01          | 1           | 500    | Singapore   |
+| 5864b7a4-0b2a-497b-a999-bb7ba39c5f46| 73c0e193-7d85-4c59-b02e-144f205b3a5c    | 1         | 2024-05-02          | 2           | 300    | Singapore   |
+| 80b5581e-675d-4a27-a732-ee7b070b8f15| 73c0e193-7d85-4c59-b02e-144f205b3a5c    | 1         | 2024-05-03          | 3           | 200    | Singapore   |
+| 8053e09a-4fc0-4732-b01c-979ae32f1961| 73c0e193-7d85-4c59-b02e-144f205b3a5c    | 1         | 2024-05-04          | 4           | 400    | Singapore   |
+| 97285896-c336-4ed1-9d51-9e418ca9f3f3| 73c0e193-7d85-4c59-b02e-144f205b3a5c    | 1         | 2024-05-05          | 1           | 600    | Singapore   |
+| b0f7ec1d-62da-4b6b-98b7-1241924f835d| 73c0e193-7d85-4c59-b02e-144f205b3a5c    | 1         | 2024-05-06          | 2           | 350    | Singapore   |
+| 47e2a58b-2c29-4fe0-9a2b-123018bc1a3e| 73c0e193-7d85-4c59-b02e-144f205b3a5c    | 1         | 2024-05-07          | 3           | 250    | Singapore   |
+| e38d7b3d-d2c8-4425-b29b-7be4437e9bf1| 73c0e193-7d85-4c59-b02e-144f205b3a5c    | 1         | 2024-05-08          | 4           | 450    | Singapore   |
+| d39d71bb-cb59-4935-b529-cf3f7e0124a0| 73c0e193-7d85-4c59-b02e-144f205b3a5c    | 1         | 2024-05-09          | 1           | 700    | Singapore   |
+| f0b7fd6d-7152-4d48-8e52-d1664ed2919d| 73c0e193-7d85-4c59-b02e-144f205b3a5c    | 1         | 2024-05-10          | 2           | 400    | Singapore   |
+| a53b8a86-e37e-4b3e-8be0-8907d413312f| 8f45849a-48e8-49ed-b8cd-9915898e74b9    | 1         | 2024-05-01          | 1           | 500    | Singapore   |
+| 40feae0a-4ec1-4d45-a62d-26b6e66797da| 8f45849a-48e8-49ed-b8cd-9915898e74b9    | 1         | 2024-05-02          | 2           | 300    | Singapore   |
+| 4e56a29b-4f33-4517-bf5c-4007a9c6b0a2| 8f45849a-48e8-49ed-b8cd-9915898e74b9    | 1         | 2024-05-03          | 3           | 200    | Singapore   |
+| e1b8a09a-f76e-45d3-91e7-c5c6d164a7e7| 8f45849a-48e8-49ed-b8cd-9915898e74b9    | 1         | 2024-05-04          | 4           | 400    | Singapore   |
+| 25c7e90b-ea9c-424b-a308-53f02e67d4e8| 8f45849a-48e8-49ed-b8cd-9915898e74b9    | 1         | 2024-05-05          | 1           | 600    | Singapore   |
+| 953cb42f-1353-49b7-b97f-4789b622f044| 8f45849a-48e8-49ed-b8cd-9915898e74b9    | 1         | 2024-05-06          | 2           | 350    | Singapore   |
+| 23a920c0-89a2-43f8-8442-cd9fd79faaa0| 8f45849a-48e8-49ed-b8cd-9915898e74b9    | 1         | 2024-05-07          | 3           | 250    | Singapore   |
+| 8c9b8ff1-b46e-4c14-a30e-9a2eb42b4958| 8f45849a-48e8-49ed-b8cd-9915898e74b9    | 1         | 2024-05-08          | 4           | 450    | Singapore   |
+| 26bde853-8003-4893-8d14-b96f686a5dc2| 8f45849a-48e8-49ed-b8cd-9915898e74b9    | 1         | 2024-05-09          | 1           | 700    | Singapore   |
+| 89e8c86b-6700-4b36-9a5d-1a44b06f7e9f| 8f45849a-48e8-49ed-b8cd-9915898e74b9    | 1         | 2024-05-10          | 2           | 400    | Singapore   |
+| 10c50f38-5eb3-4f5c-9d15-d18b3f0f499d| e752d3c5-c5b2-4694-9cf4-18b0c96f34ab    | 1         | 2024-05-01          | 1           | 500    | Singapore   |
+| 493ae42b-b5b5-4038-b75f-8d25c5e77e69| e752d3c5-c5b2-4694-9cf4-18b0c96f34ab    | 1         | 2024-05-02          | 2           | 300    | Singapore   |
+| 21a9863f-2df0-4788-8af6-ba5c76b9db55| e752d3c5-c5b2-4694-9cf4-18b0c96f34ab    | 1         | 2024-05-03          | 3           | 200    | Singapore   |
+| a5897737-f8fd-4787-8f44-6079d9471b76| e752d3c5-c5b2-4694-9cf4-18b0c96f34ab    | 1         | 2024-05-04          | 4           | 400    | Singapore   |
+| 9968ab34-0a54-459d-8f39-1e3bc1b74b3b| e752d3c5-c5b2-4694-9cf4-18b0c96f34ab    | 1         | 2024-05-05          | 1           | 600    | Singapore   |
+| 77592f90-8d25-4c67-8b77-802c66f07f44| e752d3c5-c5b2-4694-9cf4-18b0c96f34ab    | 1         | 2024-05-06          | 2           | 350    | Singapore   |
+| 62e5647c-dc6b-4d5b-9e63-d174005fc418| e752d3c5-c5b2-4694-9cf4-18b0c96f34ab    | 1         | 2024-05-07          | 3           | 250    | Singapore   |
+| 81bc6f6a-38e0-481b-8894-e6c74f28c3fd| e752d3c5-c5b2-4694-9cf4-18b0c96f34ab    | 1         | 2024-05-08          | 4           | 450    | Singapore   |
+| f94c90cb-7e3d-45b1-81a5-777a7d726447| e752d3c5-c5b2-4694-9cf4-18b0c96f34ab    | 1         | 2024-05-09          | 1           | 700    | Singapore   |
+| 4bb369f8-e5f2-4653-a6fc-12138fdacdb0| e752d3c5-c5b2-4694-9cf4-18b0c96f34ab    | 1         | 2024-05-10          | 2           | 400    | Singapore   |
+| 67086cf3-84cc-4b61-b3f1-6b7be18f8c1f| 95096e4d-20d2-4d48-bd13-431d0048e85b    | 1         | 2024-05-01          | 1           | 500    | Singapore   |
+| e64c5016-5855-4ad5-99fd-8e83f7f28ae0| 95096e4d-20d2-4d48-bd13-431d0048e85b    | 1         | 2024-05-02          | 2           | 300    | Singapore   |
+| 6f7b6113-d75a-489e-bd35-e2964a91841e| 95096e4d-20d2-4d48-bd13-431d0048e85b    | 1         | 2024-05-03          | 3           | 200    | Singapore   |
+| c8d9f529-5a1b-40d0-8817-b2e7cd20ff4e| 95096e4d-20d2-4d48-bd13-431d0048e85b    | 1         | 2024-05-04          | 4           | 400    | Singapore   |
+| 74e25227-c3b2-4d24-912e-79a4d8ff4d68| 95096e4d-20d2-4d48-bd13-431d0048e85b    | 1         | 2024-05-05          | 1           | 600    | Singapore   |
+| 5abf0d22-c5ac-45e5-a56d-10ae3c862858| 95096e4d-20d2-4d48-bd13-431d0048e85b    | 1         | 2024-05-06          | 2           | 350    | Singapore   |
+| c2249b53-37d9-4e91-bfc9-f122c1886842| 95096e4d-20d2-4d48-bd13-431d0048e85b    | 1         | 2024-05-07          | 3           | 250    | Singapore   |
+| 6af56824-0c0a-4d48-a7e1-611c5d2d215a| 95096e4d-20d2-4d48-bd13-431d0048e85b    | 1         | 2024-05-08          | 4           | 450    | Singapore   |
+| 8e415efb-4f0b-4eb3-80ac-c121151c8706| 95096e4d-20d2-4d48-bd13-431d0048e85b    | 1         | 2024-05-09          | 1           | 700    | Singapore   |
+| c97d8d8e-fc68-46a5-891f-e22d79171726| 95096e4d-20d2-4d48-bd13-431d0048e85b    | 1         | 2024-05-10          | 2           | 400    | Singapore   |
+| 759e28d8-32ef-42a2-8a80-3b44f0c95e68| 158b6f32-80c7-4f78-9057-c07c1a0d9b18    | 1         | 2024-05-01          | 1           | 500    | Singapore   |
+| 81a73544-2a61-45df-98d7-cfe9931757d4| 158b6f32-80c7-4f78-9057-c07c1a0d9b18    | 1         | 2024-05-02          | 2           | 300    | Singapore   |
+| 8d758142-19fb-4f7d-899f-c5d5042e8624| 158b6f32-80c7-4f78-9057-c07c1a0d9b18    | 1         | 2024-05-03          | 3           | 200    | Singapore   |
+| 63f5f58f-0bc4-4ad9-8b85-035f82693c4e| 158b6f32-80c7-4f78-9057-c07c1a0d9b18    | 1         | 2024-05-04          | 4           | 400    | Singapore   |
+| b0b392f7-6f5b-4795-800e-149f8b9e4629| 158b6f32-80c7-4f78-9057-c07c1a0d9b18    | 1         | 2024-05-05          | 1           | 600    | Singapore   |
+| 89f20720-72b8-4a41-8279-0b0ef05af27a| 158b6f32-80c7-4f78-9057-c07c1a0d9b18    | 1         | 2024-05-06          | 2           | 350    | Singapore   |
+| 24d81c0c-d429-4c82-a43e-421f4dfc1528| 158b6f32-80c7-4f78-9057-c07c1a0d9b18    | 1         | 2024-05-07          | 3           | 250    | Singapore   |
+| 00b8a692-c197-47da-bc16-937546f2873c| 158b6f32-80c7-4f78-9057-c07c1a0d9b18    | 1         | 2024-05-08          | 4           | 450    | Singapore   |
+| 5279644a-31b7-48b5-b132-1fead88a3835| 158b6f32-80c7-4f78-9057-c07c1a0d9b18    | 1         | 2024-05-09          | 1           | 700    | Singapore   |
+| 187cd9c0-d4ec-4dd2-9e2b-f1641b45ff64| 158b6f32-80c7-4f78-9057-c07c1a0d9b18    | 1         | 2024-05-10          | 2           | 400    | Singapore   |
+| 4da5f4ff-cdfa-4cf0-89c6-1fe8918d7bae| 788be44c-934d-46a8-9eae-b0a2a89be4f7    | 1         | 2024-05-01          | 1           | 500    | Singapore   |
+| 787a0649-8a62-41ff-aa57-b498101b22cf| 788be44c-934d-46a8-9eae-b0a2a89be4f7    | 1         | 2024-05-02          | 2           | 300    | Singapore   |
+| 299547ec-df45-4f62-833e-1d95dca931f4| 788be44c-934d-46a8-9eae-b0a2a89be4f7    | 1         | 2024-05-03          | 3           | 200    | Singapore   |
+| 0d749a38-9c06-496f-9157-5a5d785be255| 788be44c-934d-46a8-9eae-b0a2a89be4f7    | 1         | 2024-05-04          | 4           | 400    | Singapore   |
+| 36a8bc04-9c4b-4b28-8d9b-8d14b86b51d9| 788be44c-934d-46a8-9eae-b0a2a89be4f7    | 1         | 2024-05-05          | 1           | 600    | Singapore   |
+| 5c30c06e-79f4-470a-b8f3-334b7e07584b| 788be44c-934d-46a8-9eae-b0a2a89be4f7    | 1         | 2024-05-06          | 2           | 350    | Singapore   |
+| 067d92c2-81da-41fc-aae8-9cd3c2726244| 788be44c-934d-46a8-9eae-b0a2a89be4f7    | 1         | 2024-05-07          | 3           | 250    | Singapore   |
+| 512af28b-4a30-48de-a0f6-fc013e4161a2| 788be44c-934d-46a8-9eae-b0a2a89be4f7    | 1         | 2024-05-08          | 4           | 450    | Singapore   |
+| f57c9f50-cd75-4f26-b04e-5d8c48e0e738| 788be44c-934d-46a8-9eae-b0a2a89be4f7    | 1         | 2024-05-09          | 1           | 700    | Singapore   |
+| 0ae64f5a-2a70-43db-8183-dc5e12c9e1bc| 788be44c-934d-46a8-9eae-b0a2a89be4f7    | 1         | 2024-05-10          | 2           | 400    | Singapore   |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
