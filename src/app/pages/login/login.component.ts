@@ -1,4 +1,3 @@
-// src/app/pages/login/login.component.ts
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
@@ -26,29 +25,30 @@ export class LoginComponent {
 
   constructor(private router: Router) {}
 
+  checkUserExists(email: string): boolean {
+    const localUsers = localStorage.getItem('angular17users');
+    if (localUsers != null) {
+      const users = JSON.parse(localUsers);
+      return users.some((user: SignUpModel) => user.email === email);
+    }
+    return false;
+  }
+
   onRegister() {
-    const localUser = localStorage.getItem('angular17users');
-    if (localUser != null) {
-      const users = JSON.parse(localUser);
-
-      const isUserExists = users.some(
-        (user: SignUpModel) => user.email === this.signUpObj.email
-      );
-      if (isUserExists) {
-        this.isSignDivVisible = false;
-        return;
-      }
-
-      users.push(this.signUpObj);
-      localStorage.setItem('angular17users', JSON.stringify(users));
-      this.router.navigateByUrl('/dashboard');
+    const userExists = this.checkUserExists(this.signUpObj.email);
+    if (userExists) {
+      this.isSignDivVisible = false;
+      alert('User already registered. Please log in.');
     } else {
-      const users = [];
+      const localUser = localStorage.getItem('angular17users');
+      let users = localUser ? JSON.parse(localUser) : [];
       users.push(this.signUpObj);
       localStorage.setItem('angular17users', JSON.stringify(users));
+      localStorage.setItem('loggedUser', JSON.stringify(this.signUpObj));
+      alert('Registration Success');
+      console.log('Navigating to dashboard');
       this.router.navigateByUrl('/dashboard');
     }
-    alert('Registration Success');
   }
 
   onLogin() {
@@ -57,7 +57,8 @@ export class LoginComponent {
       const users = JSON.parse(localUsers);
       const isUserPresent = users.find(
         (user: SignUpModel) =>
-          user.email === this.loginObj.email && user.password === this.loginObj.password
+          user.email === this.loginObj.email &&
+          user.password === this.loginObj.password
       );
       if (isUserPresent !== undefined) {
         alert('User Found...');
@@ -70,12 +71,12 @@ export class LoginComponent {
         if (isUserExists) {
           alert('Incorrect Password');
         } else {
-          alert('No User Found');
+          this.isSignDivVisible = true;
+          alert('User not registered. Please Sign Up!');
         }
       }
     }
   }
-  
 }
 
 export class SignUpModel {

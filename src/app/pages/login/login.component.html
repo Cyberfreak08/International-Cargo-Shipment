@@ -1,41 +1,39 @@
-<!-- src/app/pages/login/login.component.html -->
 <div class="parent">
-    <div class="container" [ngClass]="isSignDivVisible ? 'active' : ''" id="container">
-      <div class="form-container sign-up">
-        <form>
-          <h1>Create Account</h1>
-          <span>Use your email for registration</span>
-          <input type="text" name="name" [(ngModel)]="signUpObj.name" placeholder="Name" />
-          <input type="email" name="email" [(ngModel)]="signUpObj.email" placeholder="Email" />
-          <input type="password" name="password" [(ngModel)]="signUpObj.password" placeholder="Password" />
-          <button type="button" (click)="onRegister()">Sign Up</button>
-        </form>
-      </div>
-      <div class="form-container sign-in">
-        <form>
-          <h1>Sign In</h1>
-          <span>Use your email and password</span>
-          <input type="email" name="email" [(ngModel)]="loginObj.email" placeholder="Email" />
-          <input type="password" name="password" [(ngModel)]="loginObj.password" placeholder="Password" />
-          <a href="#">→ Forgot Your Password? ←</a>
-          <button type="button" (click)="onLogin()">Sign In</button>
-        </form>
-      </div>
-      <div class="toggle-container">
-        <div class="toggle">
-          <div class="toggle-panel toggle-left">
-            <h1>Welcome Back!</h1>
-            <p>Enter your personal details to use all of the site's features</p>
-            <button type="button" class="hidden" id="login" (click)="isSignDivVisible = false">Sign In</button>
-          </div>
-          <div class="toggle-panel toggle-right">
-            <h1>Hello, Friend!</h1>
-            <p>Register with your personal details to use all of the site's features</p>
-            <button type="button" class="hidden" id="register" (click)="isSignDivVisible = true">Sign Up</button>
-          </div>
+  <div class="container" [ngClass]="isSignDivVisible ? 'active' : ''" id="container">
+    <div class="form-container sign-up">
+      <form>
+        <h1>Create Account</h1>
+        <span>Use your email for registration</span>
+        <input type="text" name="name" [(ngModel)]="signUpObj.name" placeholder="Name" />
+        <input type="email" name="email" [(ngModel)]="signUpObj.email" placeholder="Email" />
+        <input type="password" name="password" [(ngModel)]="signUpObj.password" placeholder="Password" />
+        <button type="button" (click)="onRegister()">Sign Up</button>
+      </form>
+    </div>
+    <div class="form-container sign-in">
+      <form>
+        <h1>Sign In</h1>
+        <span>Use your email and password</span>
+        <input type="email" name="email" [(ngModel)]="loginObj.email" placeholder="Email" />
+        <input type="password" name="password" [(ngModel)]="loginObj.password" placeholder="Password" />
+        <a href="#">→ Forgot Your Password? ←</a>
+        <button type="button" (click)="onLogin()">Sign In</button>
+      </form>
+    </div>
+    <div class="toggle-container">
+      <div class="toggle">
+        <div class="toggle-panel toggle-left">
+          <h1>Welcome Back!</h1>
+          <p>Enter your personal details to use all of the site's features</p>
+          <button type="button" class="hidden" id="login" (click)="isSignDivVisible = false">Sign In</button>
+        </div>
+        <div class="toggle-panel toggle-right">
+          <h1>Hello, User!</h1>
+          <p>Register with your personal details to use all of the site's features</p>
+          <button type="button" class="hidden" id="register" (click)="isSignDivVisible = true">Sign Up</button>
         </div>
       </div>
     </div>
   </div>
-  <router-outlet></router-outlet> <!-- Include this for routing -->
-  
+  <router-outlet></router-outlet>
+</div>

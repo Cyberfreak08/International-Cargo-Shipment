@@ -1,1 +1,19 @@
-<p>monthly-transactions works!</p>
+<div class="container">
+    <h1>Top Customers by Category - Max Monthly Transactions</h1>
+  
+    <div *ngFor="let item of data" class="category-item">
+      <h3>Category ID: {{ item.categoryId }}</h3>
+      <p>Max Transactions: {{ item.maxTransactions }}</p>
+      <div class="customer-list">
+        <div *ngFor="let customer of item.customers" class="customer-item">
+          <p>Customer Name: {{ customer.name }}</p>
+          <p>Company Name: {{ customer.company_name }}</p>
+          <p>Total Transactions: {{ customer.totalTransactions }}</p>
+          <p>Total Revenue: {{ customer.totalRevenue }}</p>
+        </div>
+      </div>
+    </div>
+  
+    <button class="back-button" (click)="goBack()">Back</button>
+  </div>
+  

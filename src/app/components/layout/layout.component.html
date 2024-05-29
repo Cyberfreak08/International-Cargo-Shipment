@@ -1,24 +1,17 @@
 <mat-toolbar color="primary" class="navbar">
-  <!-- <div class="title-context"> -->
-    <span class="title">International Cargo Shipment</span>
-  <button [cdkMenuTriggerFor]="menu" class="example-standalone-trigger">
+  <span class="title">International Cargo Shipment</span>
+
+  <button [cdkMenuTriggerFor]="mainMenu" class="example-standalone-trigger">
     <mat-icon>menu</mat-icon>
   </button>
-  <ng-template #menu>
+  <ng-template #mainMenu>
     <div class="example-menu" cdkMenu>
-      <button class="example-menu-item" cdkMenuItem routerLink="">Max Revenue in 2nd Quarter</button>
-      <button class="example-menu-item" cdkMenuItem routerLink="">
-        Quarter Revenue
-      </button>
-      <button class="example-menu-item" cdkMenuItem routerLink="">
-        Customer Volume
-      </button>
-      <button class="example-menu-item" cdkMenuItem routerLink="">
-        Max revenuer
-      </button>
+      <button class="example-menu-item" cdkMenuItem routerLink="/cust-by-category">Max Revenue in 2nd Quarter</button>
+      <button class="example-menu-item" cdkMenuItem routerLink="/2nd-quarter">Quarter Revenue</button>
+      <button class="example-menu-item" cdkMenuItem routerLink="/cust-volume">Customer Volume</button>
+      <button class="example-menu-item" cdkMenuItem routerLink="/last-quarter">Max revenuer</button>
     </div>
   </ng-template>
-  <!-- </div> -->
 
   <div class="user-info">
     <mat-icon class="profile-icon">account_circle</mat-icon>
@@ -26,35 +19,12 @@
       <span class="name">{{ userProfile?.name }}</span>
     </span>
 
-    <button [cdkMenuTriggerFor]="menu" class="example-standalone-trigger">
+    <button [cdkMenuTriggerFor]="profileMenu" class="example-standalone-trigger">
       <mat-icon>arrow_drop_down</mat-icon>
     </button>
-    <ng-template #menu>
+    <ng-template #profileMenu>
       <div class="example-menu" cdkMenu>
-        <button
-          class="example-menu-item"
-          cdkMenuItem
-          (click)="scrollToSection('home')"
-        >
-          Home
-        </button>
-        <button
-          class="example-menu-item"
-          cdkMenuItem
-          (click)="scrollToSection('about')"
-        >
-          About Us
-        </button>
-        <button
-          class="example-menu-item"
-          cdkMenuItem
-          (click)="scrollToSection('contact')"
-        >
-          Contact Us
-        </button>
-        <button class="example-menu-item" cdkMenuItem (click)="onLogoff()">
-          Log Off
-        </button>
+        <button class="example-menu-item" cdkMenuItem (click)="onLogoff()">Log Off</button>
       </div>
     </ng-template>
   </div>
