@@ -5,7 +5,6 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { MatToolbar } from '@angular/material/toolbar';
 import { MatIcon, MatIconModule } from '@angular/material/icon';
 import { CdkMenu, CdkMenuItem, CdkMenuTrigger } from '@angular/cdk/menu';
-import { ScrollService } from '../../scroll.service'; // Adjust the path as needed
 
 @Component({
   selector: 'app-layout',
@@ -27,24 +26,16 @@ import { ScrollService } from '../../scroll.service'; // Adjust the path as need
 export class LayoutComponent {
   loggedUser: any;
   userProfile: any = {
-    email: '',
     name: '',
-    initials: '',
   };
-  constructor(private router: Router, private scrollService: ScrollService) {
+  constructor(private router: Router) {
     const localUser = localStorage.getItem('loggedUser');
     if (localUser != null) {
       this.loggedUser = JSON.parse(localUser);
-      this.userProfile.email = this.loggedUser.email;
       this.userProfile.name = this.loggedUser.name;
-      this.userProfile.initials = this.userProfile.name
-        ? this.userProfile.name.charAt(0).toUpperCase()
-        : '';
     }
   }
-  scrollToSection(section: string) {
-    this.scrollService.scrollToSection(section);
-  }
+  
   onLogoff() {
     localStorage.removeItem('loggedUser');
     this.router.navigateByUrl('/login');

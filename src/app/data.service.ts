@@ -65,7 +65,7 @@ export class DataService {
           const customer = this.getCustomerDetailsById(data, customerId);
           result.push({
             branch: branch,
-            category: category.name,
+            category: category, // Include the entire category object
             customer: {
               id: customer.id,
               name: customer.name,
@@ -79,6 +79,7 @@ export class DataService {
 
     return result;
   }
+
   getCustomersByCategory(data: any, categoryId: number, quarter: number): any {
     const startMonth = (quarter - 1) * 3 + 1;
     const endMonth = startMonth + 2;
@@ -101,14 +102,39 @@ export class DataService {
     return Array.from(new Set(customers)).length;
   }
 
-  getQuarterlyTransactions(data: any, officeId: number): any {
+  // getQuarterlyTransactions(data: any, officeId: number): any {
+  //   const result = { count: 0, volume: 0 };
+  //   data.transactions.forEach((transaction: any) => {
+  //     if (transaction.office_id === officeId) {
+  //       result.count++;
+  //       result.volume += transaction.amount;
+  //     }
+  //   });
+  //   return result;
+  // }
+
+  getQuarterlyTransactions(data: any, officeId: number, quarter: number) {
     const result = { count: 0, volume: 0 };
+
+    // Determine the start and end months for the given quarter
+    const startMonth = (quarter - 1) * 3 + 1;
+    const endMonth = startMonth + 2;
+
+    // Iterate over transactions to filter and aggregate data for the specified quarter and office
     data.transactions.forEach((transaction: any) => {
-      if (transaction.office_id === officeId) {
+      const date = new Date(transaction.date_of_transaction);
+      const month = date.getMonth() + 1; // getMonth() is zero-based
+
+      if (
+        transaction.office_id === officeId &&
+        month >= startMonth &&
+        month <= endMonth
+      ) {
         result.count++;
         result.volume += transaction.amount;
       }
     });
+
     return result;
   }
 
