@@ -1,20 +1,28 @@
 <div class="container">
-        <h1>Customers by Product Category</h1>
-      
-        <div *ngIf="data && data.length > 0" class="customer-list">
-          <div *ngFor="let item of data" class="customer-item">
-            <h3>{{ item.category.category_name }}</h3>
-            <p>Branch: {{ item.branch }}</p>
-            <p>Customer Name: {{ item.customer.name }}</p>
-            <p>Company: {{ item.customer.company_name }}</p>
-            <p>Total Revenue: ${{ item.customer.totalRevenue }}</p>
-          </div>
+  <h1>Customers by Product Category</h1>
+  
+  <!-- Loader -->
+  <div *ngIf="(loading$ | async)" class="loader"></div>
+  
+  <!-- Data Display -->
+  <div *ngIf="!(loading$ | async)">
+    <div *ngIf="(data$ | async) as data">
+      <div *ngIf="data.length > 0" class="customer-list">
+        <div *ngFor="let item of data" class="customer-item">
+          <h3>{{ item.category.name }}</h3>
+          <p>Branch: {{ item.branch }}</p>
+          <p>Customer Name: {{ item.customer.name }}</p>
+          <p>Company: {{ item.customer.company_name }}</p>
+          <p>Total Revenue: ${{ item.customer.totalRevenue }}</p>
         </div>
-      
-        <div *ngIf="!data || data.length === 0" class="no-data">
-          <p>No data available</p>
-        </div>
-      
-        <button class="back-button" (click)="goBack()">Back</button>
       </div>
       
+      <div *ngIf="data.length === 0" class="no-data">
+        <p>No data available</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Back Button -->
+  <button class="back-button" (click)="goBack()">Back</button>
+</div>
